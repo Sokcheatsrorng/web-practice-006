@@ -1,6 +1,8 @@
 "use client";
 import { Footer } from "flowbite-react";
 import IstadLogoFooter from "../IstadLogo/IstadLogoFooter";
+import { FaTelegram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 export default function FooterComponent() {
   return (
@@ -30,12 +32,13 @@ export default function FooterComponent() {
                 <Footer.LinkGroup col className="text-gray-100">
                   <Footer.Link href="#">(+855) 95-990-910</Footer.Link>
                   <Footer.Link href="#">(+855) 93-990-910</Footer.Link>
-                  <Footer.LinkGroup className="flex text-gray-100">
-                    <Footer.Link>
-                      {" "}
-                      <i class="fa-brands fa-telegram"></i>Telegram
+                  <Footer.LinkGroup className="flex text-gray-100 items-center">
+                    <Footer.Link className="flex items-center mb-3">
+                      <FaTelegram className="float-left text-xl" />&nbsp; Telegram
                     </Footer.Link>
-                    <Footer.Link>Youtube</Footer.Link>
+                    <Footer.Link className="flex items-center mb-3">
+                      <FaYoutube className="float-left text-xl" />&nbsp; Youtube
+                    </Footer.Link>
                   </Footer.LinkGroup>
                 </Footer.LinkGroup>
               </div>
@@ -43,7 +46,8 @@ export default function FooterComponent() {
                 <Footer.Title title="Follow Us" className="text-white" />
                 <Footer.LinkGroup col>
                   <div
-                    class="uiScaledImageContainer _2zfr" className="w-[255px] h-[130px]"
+                    class="uiScaledImageContainer _2zfr"
+                    className="w-[255px] h-[130px]"
                   >
                     <img
                       className="scaledImageFitHeight img"

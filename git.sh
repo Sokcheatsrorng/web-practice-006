@@ -1,3 +1,3 @@
 git add .
-git commit -m "first step"
+git commit -m "done"
 git push origin master
