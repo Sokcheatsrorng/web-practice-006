@@ -1,3 +1,3 @@
 git add .
-git commit -m "done"
+git commit -m "rename page"
 git push origin master
